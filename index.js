@@ -4,8 +4,7 @@ function findMatching (array, name){
 }
 
 function fuzzyMatch(array, letters){
-    let length = letters.length
-    return array.filter(driver => driver.substring(0, length) === letters)
+    return array.filter(driver => driver.substring(0, letters.length) === letters)
 }
 
 function matchName(array, name){
